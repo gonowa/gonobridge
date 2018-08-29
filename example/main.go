@@ -3,15 +3,15 @@
 package main
 
 import (
-	"flag"
 	"github.com/gonowa/gonobridge"
 	"log"
+	"os"
 	"syscall/js"
 	"time"
 )
 
 func main() {
-	log.Println(flag.Args())
+	log.Println(os.Args)
 	gonobridge.Listen("test", js.NewCallback(func(args []js.Value) {
 		log.Println(args)
 	}))
