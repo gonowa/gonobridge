@@ -1,1 +1,2 @@
-# bridge
+# gonobridge
+bridge between nodejs and golang
